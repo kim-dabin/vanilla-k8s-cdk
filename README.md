@@ -17,7 +17,7 @@ CDK 연습삼아 작성한 것이기에, 작성 방식이 모범사례라고 볼
 
 | Hostname | IPv4 | Type(기본값) | EBS size(기본값) |
 | --- | --- | --- | --- |
-| k8s-m | 192.168.10.10 | t4g.medium | 50 GiB |
+| k8s-m | 192.168.10.10 | t4g.large | 50 GiB |
 | k8s-w1 | 192.168.10.101 | t4g.medium | 50 GiB |
 | k8s-w2 | 192.168.10.102 | t4g.medium | 50 GiB |
 | k8s-w3 | 192.168.20.103 | t4g.medium | 50 GiB |
