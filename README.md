@@ -11,6 +11,17 @@ CDK 연습삼아 작성한 것이기에, 작성 방식이 모범사례라고 볼
 | lib/doik-vanilla-k8s-stack.ts |     생성할 스택에 대해 작성된 파일입니다. (CloudFormation 파일이라고 보시면 됩니다.)     |
 
 
+## AWS 구성
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/57b3e209-ce00-4a0f-a753-202f9b13eafa/b68329d2-9879-41ae-b3d9-5b988b4bea8d/Untitled.png)
+- 마스터 노드 1대, 워커 노드 3대로 구성
+    - EC2 Spec: Ubuntu 24.04, t4g.medium (2CPU 4MEM, USD 0.0416 x 4대 =  USD 0.1664 = 시간당 226.65 원), EBS gp3 50GiB
+| Hostname | IPv4 | Type(기본값) | EBS size(기본값) |
+| --- | --- | --- | --- |
+| k8s-m | 192.168.10.10 | t4g.medium | 50 GiB |
+| k8s-w1 | 192.168.10.101 | t4g.medium | 50 GiB |
+| k8s-w2 | 192.168.10.102 | t4g.medium | 50 GiB |
+| k8s-w3 | 192.168.20.103 | t4g.medium | 50 GiB |
+
 ## 사전 준비 
 
 ### AWS 연결 준비
